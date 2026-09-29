@@ -27,25 +27,45 @@
   <link rel="stylesheet" href="index.css" />
 </head>
 
-<body>
+<style>
+body{
+  margin: 0;
+  padding : 0;
+}
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-           <li class="nav__item">
-            <a href="#socials" class="nav__link">Socials</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+h2,p{margin: 10px;}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+ul li a{
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover{background-color: grey}
+</style>
+
+<body>
+  <ul>
+    <li><a href = "#work"> Work </a></li>
+    <li><a href = "#about"> About </a></li>
+    <li><a href = "#contact"> Contact </a></li>
+    <li><a href = "#socials"> Socials </a></li>
+  </ul>
+
+<style>
+  body{text-align: center};
+</style>
+
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
@@ -57,14 +77,13 @@
         <a href="#contact" class="btn btn--pink">Contact Me!</a>
       </div>
     </div>
-  </header>
 
   <section class="about" id="about">
       <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
+      <h2><p style="font-size:30px; text-decoration-line: underline;">About Me</p></h2>        
+      <div class="about__content">
           <div class="about__text">
-              <img class="about__photo" src="./images/PhotoOfMe.png" width="250" style="padding:1px;border:thin solid black;"/>
+              <img class="about__photo" src="./images/PhotoOfMe.png" width="250" style="padding:2px;border:thin solid black;"/>
             <p>
               I'm a 3rd year University Student looking for a summer intership
               to further enhance my knowledge about Information Security and 
@@ -80,12 +99,11 @@
         </div>
       </div>
     </section>
-  </main>
 
   <section class="contact" id="contact">
     <div class="row">
-      <h2>Contact Me!</h2>
-      <div class="contact__info">
+    <h2><p style="font-size:30px; text-decoration-line: underline;">Contact Me</p></h2>      
+    <div class="contact__info">
         <p>
           Are you looking for someone who is resourceful in coding. Or maybe looking for 
           an employee who has experience in Java / C++ while also having SQL knowledge? 
@@ -102,68 +120,84 @@
   <main role="main">
     <section class="work" id="work">
       <div class="row">
-        <h2>My Work</h2>
+        <h2><p style="font-size:30px; text-decoration-line: underline;">My Work</p></h2>
         <div class="work__boxes">
-
           <div class="work__box">
             <div class="work__text">
-              <h3>Wordle</h3>
+              <style>
+               .Wordle{
+                font-weight: bold;
+                font-size: 25px;
+                display: inline-block;
+                border-style: solid;
+                padding: 10px
+              }
+              </style>
+              <p class = "Wordle">Wordle</p>
               <p>
                 A recreation of the popular NYT game 'Wordle' using the Java language
                 and a Graphics Library by Leon Schram.
               </p>
-              <ul class="work__list">
-                <li>Java</li>
-                <li>Graphics</li>
-              </ul>
-
               <div class="work__links">
                 <a href="https://github.com/StephenEtuokwu/Wordle" target="_blank" class="link__text">
-                  Visit Worlde's Code <span>&rarr;</span>
+                  Visit Worlde's Code 
+                  <span></span>
                 </a>
               </div>
             </div>
-             <video width="600" height="300" controls style="border: 2px solid #000000;  object-fit: cover; display: block;"> 
+             <video width="600" height="300" controls style="border: 2px solid #000000;  object-fit: cover; display: inline-block;"> 
              <source src="images/WordleDemo.mp4" type="video/mp4">
             </video>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Casino</h3>
+              <style>
+              .Casino{
+                font-weight: bold;
+                font-size: 25px;
+                display: inline-block;
+                border-style: solid;
+                padding: 10px
+              }
+              </style>
+              <p class="Casino">Casino</p>
               <p>
                 An online casino where the user plays against a CPU. Includes Blackjack, Craps,
                 Roulette, Slots, TexasHoldEm, Uno, and War 
               </p>
-              <ul class="work__list">
-                <li>Java</li>
-              </ul>
               <div class="work__links">
                 <a href="https://github.com/StephenEtuokwu/Casino" class="link__text">
-                  Visit Casino's Code <span>&rarr;</span>
+                  Visit Casino's Code <span></span>
                 </a>
               </div>
-              <video width="600" height="300" controls style="border: 2px solid #000000;  object-fit: cover; display: inline-block;"> 
+            </div>
+              <video width="600" height="300" controls style="border: 2px solid #000000;  object-fit: cover; display: inline;"> 
              <source src="images/CasinoDemo1.mp4" type="video/mp4">
             </video>
-            <video width="600" height="300" controls style="border: 2px solid #000000;  object-fit: cover; display: inline-block;"> 
+            <video width="600" height="300" controls style="border: 2px solid #000000;  object-fit: cover; display: inline;"> 
              <source src="images/CasinoDemo2.mp4" type="video/mp4">
             </video>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Text-Based RPG Game</h3>
+              <style>
+              .RPG{
+                font-weight: bold;
+                font-size: 25px;
+                display: inline-block;
+                border-style: solid;
+                padding: 10px
+              }
+              </style>
+              <p class="RPG">Text-Based RPG Game</p>
               <p>
                 A text based RPG Game in the C++ language that utilizes classes, pointers, OOP.
               </p>
-              <ul class="work__list">
-                <li>C++</li>
-              </ul>
-
               <div class="work__links">
                 <a href="https://github.com/StephenEtuokwu/RPG_Game" class="link__text">
-                  Visit RPG's Code <span>&rarr;</span>
+                  Visit RPG's Code <span></span>
                 </a>
               </div>
             </div>
@@ -174,10 +208,11 @@
         </div>
       </div>
     </section>
+  </main>
 
   <footer role="contentinfo" class="footer">
     <section class="work" id="work"></section>
-    <h4><p style="font-size:30px">Socials</p></h4>
+    <h4><p style="font-size:30px; text-decoration-line: underline;">Socials</p></h4>
     <section class="socials" id="socials">
     <div class="row">
       <div class="socials">
@@ -203,5 +238,6 @@
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" width = "150"controls style = "display: inline-block" />
   </a>
   <script src="./index.js"></script>
+  Back To Top
 </body>
 </html>
