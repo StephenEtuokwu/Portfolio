@@ -33,6 +33,19 @@ body{
   padding : 0;
 }
 
+.aboutMe{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.about__content .container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
 h2,p{margin: 10px;}
 
 ul{
@@ -80,29 +93,26 @@ ul li a:hover{background-color: grey}
 
   <section class="about" id="about">
       <div class="row">
-      <h2><p style="font-size:30px; text-decoration-line: underline;">About Me</p></h2>        
+      <h2><p style="font-size:30px; margin-top:30px; text-decoration-line: underline;">About Me</p></h2>        
       <div class="about__content">
-          <div class="about__text">
-              <img class="about__photo" src="./images/PhotoOfMe.png" width="250" style="padding:2px;border:thin solid black;"/>
-            <p>
-              I'm a 3rd year University Student looking for a summer intership
-              to further enhance my knowledge about Information Security and 
-              Software Devlopment. My minor in Data & Society and MIS further 
-              assist my career goal to not only protect information, but to also
-              use it to enchance the wellbeing of those around me.
-            </p>
-            <a href="images/StephenEtuokwuUndergraduateResume.pdf" class="btn">My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-          </div>
-        </div>
+          <div class = "container">
+          <img src="./images/PhotoOfMe.png" width="250" style= "padding:2px; margin: 20px; border:thin solid black;"/>
+          <p class = "aboutMe">
+             I'm a 3rd year University Student looking for a summer intership
+             to further enhance my knowledge about Information Security and 
+             Software Devlopment. My minor in Data & Society and MIS further 
+             assist my career goal to not only protect information, but to also
+             use it to enchance the wellbeing of those around me.
+           </p>
+            <a href="images/StephenEtuokwuUndergraduateResume.pdf" class="aboutMe">My Resume</a>
+           </div>
+       </div>
       </div>
     </section>
 
   <section class="contact" id="contact">
     <div class="row">
-    <h2><p style="font-size:30px; text-decoration-line: underline;">Contact Me</p></h2>      
+    <h2><p style="font-size:30px; margin-bottom: 50px; text-decoration-line: underline;">Contact Me</p></h2>      
     <div class="contact__info">
         <p>
           Are you looking for someone who is resourceful in coding. Or maybe looking for 
@@ -146,7 +156,7 @@ ul li a:hover{background-color: grey}
               </div>
             </div>
               <video id="video" video width="600" height="300" autoplay loop muted controls style="border: 2px solid #000000;  object-fit: cover; display: inline;">
-               <source src="https://github.com/StephenEtuokwu/Portfolio/raw/main/images/WordleDemo.mp4" type="video/mp4">
+             <source src="https://github.com/StephenEtuokwu/Portfolio/raw/main/images/WordleDemo.mp4" type="video/mp4">
             </video>
           </div>
 
@@ -231,7 +241,7 @@ ul li a:hover{background-color: grey}
         </li>
       </ul>
 
-    </div>
+  </div>
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
